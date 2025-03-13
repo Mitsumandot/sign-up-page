@@ -77,24 +77,21 @@ body {
 }
 
 .sign-up {
-    width:50%;
+    width:90%;
     background:#1b1a17;
     display:flex;
     flex-direction:column;
+    gap:0px;
 }
 
 .curseMark {
-    height:60px;
-    width:58px;
+    height:100px;
+    width:97px;
     margin-top:5px;
     margin-left:5px;
+    align-self:center;
 }
 
-.header {
-    display:flex;
-    align-items:center;
-    gap:5px;
-}
 
 .cursed{
     font-size:25px;
@@ -104,31 +101,95 @@ body {
 }
 
 form {
-    margin-top:60px;
+    margin-top:10px;
     display:flex;
     flex-direction:column;
     align-self:center;
+    width:450px;
+    gap:15px;
 }
 
 .title {
     font-family:"myFont";
     color:#CD7F32;
+    align-self:center;
+    font-size:30px;
 }
 
 .social{
     display:flex;
     justify-content:space-around;
-    margin-top:10px;
 }
 
 .social button {
     border-radius:100px;
     height:50px;
     width:50px;
-    border:2px solid#695442;
+    border:2px solid#CD7F32;
     background-color:#695442;
+
 }
 
 .icon {
     color:#CD7F32;
+}
+
+.via-container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+}
+
+.via-container::before,
+.via-container::after {
+    content:"";
+    flex:1;
+    border-bottom:2px solid #CD7F32;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.via {
+    color:#CD7F32;
+    font-family:"myFont";
+}
+
+.inputs {
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    justify-content:center;
+    align-self:center;
+    gap:20px;
+}
+
+.inputs input {
+    border-radius:20px;
+    padding:10px;
+    background-color:#695442;
+    font-family:"myFont";
+    color:#f4efde;
+}
+
+.submit {
+    align-self:center;
+    margin-top:20px;
+    display:flex;
+
+}
+
+.submit input {
+    border-radius:20px;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+    font-family:"myFont";
+    background-color:#CD7F32;
+    color:#f4efde;
+}
+
+.fire {
+    width:50px;
+    height:50px;
 }
